@@ -1,0 +1,120 @@
+﻿/* ============================================
+   Media queries for screens smaller than 768px
+   ============================================ */
+@media (max-width: 768px) {
+
+    /* ============================================
+       General Styles
+       ============================================ */
+
+    .icon {
+        display: block;
+        margin: 0;
+        min-width: 0;
+    }
+
+    .mobile-menu.show {
+        display: block;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+        .header-right a {
+            padding: 2.5% 0%;
+            display: flex;
+            margin: 20%;
+            justify-content: center;
+            background-color: #616161e6;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            color: white;
+        }
+
+    /* ============================================
+       Registration Screen
+       ============================================ */
+
+    #register-screen {
+        width: 80%;
+    }
+
+    /* ============================================
+       Dashboard Styles
+       ============================================ */
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .card-container {
+        width: 80%;
+        height: 20vh;
+    }
+
+    .dashboard-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+        .dashboard-buttons .left-button,
+        .dashboard-buttons .right-button {
+            font-size: 0.9rem;
+            padding: 0.8em 1em;
+        }
+
+    /* ============================================
+       Charges Screen
+       ============================================ */
+
+    #charge-screen {
+        width: 90%;
+    }
+
+    .charts-grid {
+        gap: 5%;
+    }
+
+    .category-list {
+        grid-template-columns: 1fr;
+    }
+
+    .split-container {
+        grid-template-columns: 1fr;
+    }
+
+    #charges-table th, #charges-table td {
+        font-size: 0.9rem;
+    }
+
+    .total-expenses h3 {
+        font-size: 1rem;
+    }
+
+    #back-to-dashboard button {
+        font-size: 0.9rem;
+        padding: 0.5em 1em;
+    }
+
+    /* ============================================
+       Actions Screen
+       ============================================ */
+
+    #actions-section {
+        width: 95%;
+    }
+
+    #actions-table {
+        font-size: 0.9rem;
+    }
+
+    .table-container {
+        max-height: 50vh;
+    }
+
+    #back-to-dashboard button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

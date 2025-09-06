@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+</head>
+<body class="page-image">
+    <!-- Class for dynamic background image -->
+    <!-- Header section -->
+    <header>
+        <div class="header">
+            <!-- Logo with a link back to the dashboard -->
+            <a href="dashboard.html" class="logo">D&J Personal Credit Card</a>
+
+            <!-- Mobile menu icon -->
+            <a class="icon">☰</a>
+
+            <!-- Navigation bar -->
+            <div class="header-right" id="navbar">
+                <a href="dashboard.html">Dashboard</a> <!-- Link to the dashboard page -->
+                <a href="charges.html">Charges</a> <!-- Link to the charges page -->
+                <a href="actions.html">Actions</a> <!-- Link to the actions page -->
+                <a href="profile.html">Profile</a> <!-- Link to the profile page -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section for updating profile -->
+    <section id="update-profile-screen" class="container">
+        <h1>Update Profile</h1> <!-- Section title -->
+        <form id="update-profile-form">
+            <p>* Fields are optional.</p> <!-- Instruction for the user -->
+            <!-- Input field for updating email -->
+            <label for="update-email">Update Email: <span class="optional">*</span></label>
+            <input type="email" id="update-email" name="update-email"> <!-- Validates email format -->
+            <!-- Input field for updating password -->
+            <label for="update-password">Update Password: <span class="optional">*</span></label>
+            <input type="password" id="update-password" name="update-password"> <!-- Hides input for privacy -->
+            <!-- Input field for updating card number -->
+            <label for="update-card-number">Update Card Number: <span class="optional">*</span></label>
+            <input type="text" id="update-card-number" name="update-card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19"> <!-- Placeholder shows expected format, max length ensures no extra digits -->
+            <!-- Input field for updating card expiry date -->
+            <label for="update-card-expiry">Update Card Expiry: <span class="optional">*</span></label>
+            <input type="text" id="update-card-expiry" name="update-card-expiry" placeholder="MM/YY" maxlength="5"> <!-- Placeholder and max length guide the format -->
+            <!-- Input field for updating billing day -->
+            <label for="billing-day">Update Billing Date: <span class="optional">*</span></label>
+            <input type="number" id="billing-day" name="billing-day" min="1" max="28"> <!-- Billing day is limited between 1 and 28 to handle shorter months -->
+            <!-- Dropdown for updating card status -->
+            <label for="card-status-update">Update Card Status: <span class="optional">*</span></label>
+            <select id="card-status-update" name="card-status">
+                <option value="">Select Status</option> <!-- Default empty option -->
+                <option value="active">Active</option> <!-- Card is usable -->
+                <option value="locked">Locked</option> <!-- Card is disabled -->
+            </select>
+
+            <!-- Buttons -->
+            <button type="submit">Update</button> <!-- Submits the form -->
+            <button type="button" id="back-to-dashboard">Back to Dashboard</button> <!-- Returns to the dashboard -->
+        </form>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Our Website D & J</p>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿/* ============================================
+   Styling for the billing summary section
+   ============================================ */
+.billing-summary {
+    margin-top: 7%;
+}
+
+/* ============================================
+   Container for the credit card
+   ============================================ */
+.card-container {
+    position: relative;
+    margin: 5% auto;
+    width: 90%;
+    max-width: 400px;
+    height: 28vh;
+    cursor: pointer;
+}
+
+/* ============================================
+   Styling for the credit card image
+   ============================================ */
+#credit-card-image {
+    width: 100%;
+    border-radius: 5%;
+}
+
+/* ============================================
+   Styling for the card details overlay
+   ============================================ */
+#card-details {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 1.2rem;
+    padding: 1%;
+    color: white;
+}
+
+/* ============================================
+   Styling for the locked card image
+   ============================================ */
+#card-locked {
+    position: absolute;
+    top: 0;
+    margin: -10%;
+    width: 30%;
+    height: auto;
+    display: none;
+}
+
+    #card-locked.animate-stamp {
+        animation: simpleStamp 0.4s ease-out forwards;
+    }
+
+/* ============================================
+   Keyframes for the stamp animation
+   ============================================ */
+@keyframes simpleStamp {
+    from {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ============================================
+   Styling for the dashboard buttons
+   ============================================ */
+.dashboard-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+    .dashboard-buttons .left-button,
+    .dashboard-buttons .right-button {
+        transition: background-color 0.3s ease;
+    }
+
+    .dashboard-buttons .right-button {
+        background-color: var(--primary-color);
+    }
+
+        .dashboard-buttons .right-button:hover {
+            background-color: #2a5282;
+        }
+
+    .dashboard-buttons .left-button {
+        background-color: #e53e3e;
+    }
+
+        .dashboard-buttons .left-button:hover {
+            background-color: #c53030;
+        }

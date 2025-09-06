@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Transactions</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/actions.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+</head>
+<body class="page-image">
+    <!-- Adds a background image (managed by JavaScript) -->
+    <!-- Header section -->
+    <header>
+        <div class="header">
+            <!-- Logo and navigation menu -->
+            <a href="dashboard.html" class="logo">D&J Personal Credit Card</a> <!-- Website logo -->
+            <a class="icon">☰</a> <!-- Hamburger menu icon for mobile view -->
+            <div class="header-right" id="navbar">
+                <!-- Navigation links -->
+                <a href="dashboard.html">Dashboard</a>
+                <a href="charges.html">Charges</a>
+                <a href="actions.html">Actions</a>
+                <a href="profile.html">Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section for loading transactions -->
+    <section id="actions-section">
+        <h1>Load Transactions</h1> <!-- Page title -->
+        <!-- File input for uploading CSV files -->
+        <input type="file" id="csv-file" accept=".csv">
+        <!-- Button to trigger the loading of transactions -->
+        <button id="load-transactions">Load Transactions</button>
+        <!-- Button to navigate back to the dashboard -->
+        <button id="back-to-dashboard" type="button">Back to Dashboard</button>
+        <!-- Output area for displaying results (errors, messages, etc.) -->
+        <div id="transactions-output"></div>
+
+        <!-- Table to display loaded transactions -->
+        <div class="table-container">
+            <table id="actions-table">
+                <thead>
+                    <tr>
+                        <!-- Table headers -->
+                        <th>Date</th>
+                        <th>Business Name</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Transactions will be dynamically added here using JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Our Website D & J</p>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/actions.js"></script>
+</body>
+</html>

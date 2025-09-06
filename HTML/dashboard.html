@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+</head>
+<body class="page-image">
+    <!-- "page-image" class allows for dynamic background images -->
+    <!-- Header section -->
+    <header>
+        <div class="header">
+            <!-- Logo that redirects to the dashboard -->
+            <a href="dashboard.html" class="logo">D&J Personal Credit Card</a>
+            <!-- Hamburger menu for mobile devices -->
+            <a class="icon">☰</a>
+            <!-- Navigation menu -->
+            <div class="header-right" id="navbar">
+                <a href="dashboard.html">Dashboard</a> <!-- Link to the dashboard page -->
+                <a href="charges.html">Charges</a> <!-- Link to the charges page -->
+                <a href="actions.html">Actions</a> <!-- Link to the actions page -->
+                <a href="profile.html">Profile</a> <!-- Link to the profile page -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section for dashboard content -->
+    <section id="dashboard">
+        <!-- Welcome message -->
+        <h1>Welcome, <span id="user-email"></span></h1> <!-- User email will be dynamically inserted -->
+        <!-- Current date and time -->
+        <p>Date and Time: <span id="current-datetime"></span></p> <!-- Dynamically updated with JavaScript -->
+        <!-- Credit card display -->
+        <div id="credit-card" class="card-container">
+            <!-- Credit card image -->
+            <img src="../images/card-dashboard.png" alt="Credit Card" id="credit-card-image">
+            <!-- Credit card details -->
+            <div id="card-details">
+                <span id="card-first-group">•••• •••• ••••</span> <!-- Hidden credit card groups -->
+                <span id="card-last-digits"></span> <!-- Last 4 digits of the card (from user data) -->
+                <p id="card-expiry"></p> <!-- Card expiry date -->
+            </div>
+            <!-- Locked card icon (visible only if the card is locked) -->
+            <img src="../images/locked-card.png" id="card-locked">
+        </div>
+
+        <!-- Billing summary section -->
+        <div class="billing-summary">
+            <p>Click the card to view your transactions</p>
+            <p><span id="current-bill-date"></span> of every month</p>
+            <p>Last Month's Charge: <span id="last-month-charge"></span></p>
+            <p>Upcoming Charge: <span id="upcoming-charge"></span></p>
+        </div>
+
+        <!-- Buttons for additional actions -->
+        <div class="dashboard-buttons">
+            <button id="logout-button" class="left-button">Logout</button>
+            <button id="go-to-actions" class="right-button">My Actions</button>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Our Website D & J</p>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/dashboard.js"></script>
+</body>
+</html>

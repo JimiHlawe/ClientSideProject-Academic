@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+</head>
+<body class="page-image">
+    <!-- Class for dynamic background image -->
+    <header>
+        <div class="header">
+            <!-- Logo that redirects to the dashboard -->
+            <a href="login.html" class="logo">D&J Personal Credit Card</a>
+            <!-- Hamburger menu for mobile devices -->
+            <a class="icon">☰</a>
+            <!-- Navigation menu -->
+            <div class="header-right" id="navbar">
+                <a href="login.html">Login</a> <!-- Link to the Login page -->
+                <a href="register.html">Register</a> <!-- Link to the Register page -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration section -->
+    <section id="register-screen">
+        <h1>Register</h1> <!-- Title of the section -->
+        <form id="register-form">
+            <!-- Form for registering a new user -->
+            <!-- Input for email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <!-- Validates email format -->
+            <!-- Input for password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required> <!-- Hides input for privacy -->
+            <!-- Input for birthdate -->
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required> <!-- Ensures valid date input -->
+            <!-- Input for credit card number -->
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19" required> <!-- Placeholder guides the user on the expected format; maxlength limits input to 19 characters -->
+            <!-- Input for credit card expiry date -->
+            <label for="card-expiry">Card Expiry:</label>
+            <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" maxlength="5" required> <!-- Placeholder and maxlength guide the user to input valid expiry format -->
+            <!-- Submit button -->
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Link to the login page for existing users -->
+        <p>Already have an account? <a href="login.html" id="go-to-login">Login</a></p>
+
+        <!-- Optional elements for future dynamic updates -->
+        <p id="billing-date"></p>
+        <p id="card-status"></p>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Our Website D & J</p>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>

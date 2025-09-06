@@ -1,0 +1,34 @@
+﻿/* ============================================
+   Styling the update profile screen container
+   ============================================ */
+#update-profile-screen {
+    margin: 5% auto;
+}
+
+/* ============================================
+   Styling the update profile form
+   ============================================ */
+#update-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+    #update-profile-form input, select {
+        width: auto;
+    }
+
+        #update-profile-form input:focus, #update-profile-form select:focus {
+            outline: none;
+            border-color: #3182ce;
+            background-color: white;
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+        }
+
+/* ============================================
+   Optional label styling
+   ============================================ */
+.optional {
+    color: #a0aec0;
+    margin-left: 0.5em;
+}

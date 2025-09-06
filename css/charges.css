@@ -1,0 +1,154 @@
+﻿/* ============================================
+   Main container for the charges screen
+   ============================================ */
+#charge-screen {
+    width: 75%;
+    max-width: none;
+    margin: 5% auto;
+}
+
+/* ============================================
+   Label styling for the month selector
+   ============================================ */
+.month-selector label {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* ============================================
+   Dropdown styling for the month selector
+   ============================================ */
+.month-selector select {
+    cursor: pointer;
+    width: 100%;
+}
+
+/* ============================================
+   Main layout grid for splitting charts and table
+   ============================================ */
+.split-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+/* ============================================
+   Left Side - Container for the charts
+   ============================================ */
+.charts-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    height: 40vh;
+    padding: 1%;
+    margin: 5% 0;
+}
+
+/* ============================================
+   Right Side - Styling for the table container
+   ============================================ */
+.table-container {
+    margin-top: 6%;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 1%;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    max-height: 150vh;
+}
+
+/* ============================================
+   Styling for the charges table
+   ============================================ */
+#charges-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    #charges-table th, #charges-table td {
+        border: 1px solid #e2e8f0;
+        padding: 1%;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    #charges-table th {
+        background-color: #f1f5f9;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+    }
+
+    #charges-table tr:nth-child(even) {
+        background-color: var(--secondary-color);
+    }
+
+    #charges-table tr:hover {
+        background-color: #e2e8f0;
+    }
+
+/* ============================================
+   Bottom Section - Category Summary styling
+   ============================================ */
+.category-summary {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2%;
+    box-shadow: var(--box-shadow);
+    margin-top: 2%;
+}
+
+    .category-summary h3 {
+        color: var(--primary-color);
+        text-align: center;
+        margin-bottom: 1.5em;
+        font-size: 1.3rem;
+    }
+
+/* ============================================
+   Grid layout for the category list
+   ============================================ */
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 1.5%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .category-list li {
+        padding: 1em;
+        background: #f8fafc;
+        border-radius: var(--border-radius);
+        transition: transform 0.2s ease;
+    }
+
+        .category-list li:hover {
+            transform: translateX(5px);
+        }
+
+/* ============================================
+   Styling for the total expenses section
+   ============================================ */
+.total-expenses {
+    margin-top: 10%;
+    padding: 1%;
+    background: #fef2f2;
+    border: 1px solid #fee2e2;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+    .total-expenses h3 {
+        color: #dc2626;
+        font-size: 1.2rem;
+        margin: 0;
+    }
