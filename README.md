@@ -51,4 +51,4 @@ This is an academic project for learning client-side web development. All data i
 
 ---
 
-© 2025 D & J
+© 2025 D&J
