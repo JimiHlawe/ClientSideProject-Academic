@@ -49,6 +49,4 @@ A client-side web application for managing personal credit card accounts.
 
 This is an academic project for learning client-side web development. All data is stored locally in the browser using localStorage.
 
----
 
-© 2025 D&J
