@@ -1,4 +1,4 @@
-# D&J Personal Credit Card
+# Personal Credit Card
 
 A client-side web application for managing personal credit card accounts.
 
